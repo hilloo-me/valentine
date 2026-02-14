@@ -24,7 +24,12 @@
             z-index: 10;
         }
         h1 { color: #ff4757; }
-        .buttons { margin-top: 20px; display: flex; justify-content: center; gap: 20px; }
+        .buttons { 
+            margin-top: 20px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+        }
         .btn {
             padding: 10px 25px;
             border: none;
@@ -34,7 +39,11 @@
             transition: 0.3s;
         }
         #yesBtn { background-color: #ff6b6b; color: white; }
-        #noBtn { background-color: #f1f2f6; color: #2f3542; position: absolute; }
+        #noBtn { 
+            background-color: #f1f2f6; 
+            color: #2f3542; 
+            position: relative; /* Change 'absolute' to 'relative' initially */
+        }
     </style>
 </head>
 <body>
@@ -45,3 +54,4 @@
             <button class="btn" id="noBtn" onmouseover="moveButton()">No</button>
         </div>
     </div>
+
